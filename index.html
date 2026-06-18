@@ -809,10 +809,10 @@
             <p style="font-family:'Noto Serif SC',serif; color:var(--gold); margin-bottom: 20px;">探索越南</p>
             <p>Vui lòng điền tên của bạn trước khi bước vào hành trình.</p>
             <p style="font-family:'Noto Serif SC',serif; font-size: 0.8rem; opacity: 0.7; margin-top: 4px;">
-                进入旅程前请填写您的名字。</p>
+                請在出發前填寫您的姓名</p>
 
             <input type="text" id="playerName" class="welcome-input" placeholder="Tên của bạn / 您的名字...">
-            <button class="welcome-btn" onclick="startGame()">Bắt Đầu / 开始</button>
+            <button class="welcome-btn" onclick="startGame()">Bắt Đầu / 開始</button>
         </div>
     </div>
 
@@ -821,9 +821,9 @@
 
         <div class="lang-bar">
             <span class="vi">Ngôn ngữ</span>
-            <span class="zh" style="font-family:'Noto Serif SC',serif;">语言</span>
+            <span class="zh" style="font-family:'Noto Serif SC',serif;">語言</span>
             <button class="lang-btn active" id="btn-vi" onclick="setLang('vi')">🇻🇳 Tiếng Việt</button>
-            <button class="lang-btn" id="btn-zh" onclick="setLang('zh')">🇨🇳 中文</button>
+            <button class="lang-btn" id="btn-zh" onclick="setLang('zh')">🇨🇳 中國人</button>
         </div>
 
         <div class="hud-stamina" id="hudStamina">
@@ -836,13 +836,13 @@
             <div class="hero-emblem">🌸</div>
             <h1 class="hero-title">
                 <span class="vi">Chào <span class="accent" id="displayPlayerName">bạn</span>!</span>
-                <span class="zh" style="font-family:'Noto Serif SC',serif; display:none;">你好 <span class="accent"
+                <span class="zh" style="font-family:'Noto Serif SC',serif; display:none;">迎接 <span class="accent"
                         id="displayPlayerNameZH">朋友</span>！</span>
             </h1>
             <p class="hero-desc">
                 <span class="vi">Chào mừng bạn bước vào hành trình du ngoạn các vùng đất di sản. Hãy tìm hiểu thông tin
                     địa danh cùng từ vựng, sau đó bấm nút kiểm tra ở cuối trang.</span>
-                <span class="zh" style="font-family:'Noto Serif SC',serif;">欢迎来到遗产地之旅。了解景点信息和词汇，然后点击页面底部的测验。</span>
+                <span class="zh" style="font-family:'Noto Serif SC',serif;">歡迎來到我們的文化遺產之旅。了解一下地標和相關詞彙，然後點擊頁面底部的勾選按鈕</span>
             </p>
 
             <div class="hero-stats">
@@ -854,12 +854,12 @@
                 <div class="stat">
                     <div class="stat-num" id="stat-places">0</div>
                     <div class="stat-label vi">Địa Danh</div>
-                    <div class="stat-label zh" style="font-family:'Noto Serif SC',serif;">景点</div>
+                    <div class="stat-label zh" style="font-family:'Noto Serif SC',serif;">地名</div>
                 </div>
                 <div class="stat">
                     <div class="stat-num" id="stat-vocabs">0</div>
                     <div class="stat-label vi">Từ Vựng</div>
-                    <div class="stat-label zh" style="font-family:'Noto Serif SC',serif;">词汇</div>
+                    <div class="stat-label zh" style="font-family:'Noto Serif SC',serif;">詞彙</div>
                 </div>
             </div>
         </section>
@@ -870,14 +870,14 @@
                 <div class="section-head reveal">
                     <h2 class="section-title">
                         <span class="vi">Việt Nam, Một Chuyến Đi</span>
-                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">三座城市，一场旅程</span>
+                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">越南，一次旅行</span>
                     </h2>
                     <div class="section-rule"></div>
                 </div>
 
                 <div id="locations-container" style="text-align: center; color: var(--ink-soft);">
                     <span class="vi">Đang kết nối cơ sở dữ liệu... ⏳</span>
-                    <span class="zh" style="display:none;">正在加载数据... ⏳</span>
+                    <span class="zh" style="display:none;">正在連接資料庫... ⏳</span>
                 </div>
 
                 <div id="unlock-trigger-container" style="text-align: center; margin-top: 50px; display: none;">
@@ -885,7 +885,7 @@
                         style="max-width: 320px; border-radius: 30px; box-shadow: 0 4px 15px rgba(200,16,46,0.3);"
                         onclick="revealQuizSection()">
                         <span class="vi">Kiểm Tra Kiến Thức ➔</span>
-                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">开始知识测验 ➔</span>
+                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">知識測驗 ➔</span>
                     </button>
                 </div>
 
@@ -898,7 +898,7 @@
                 <div class="section-head">
                     <h2 class="section-title">
                         <span class="vi">Câu Hỏi Kiến Thức</span>
-                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">测验问题</span>
+                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">知識問答</span>
                     </h2>
                     <div class="section-rule"></div>
                 </div>
@@ -907,7 +907,7 @@
                 <div class="quiz-instructions-card">
                     <h3>
                         <span class="vi">⚠️ HƯỚNG DẪN THỂ LỰC & CÁCH CHƠI</span>
-                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">⚠️ 体力与规则说明</span>
+                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">⚠️ 健身指南及玩法介紹</span>
                     </h3>
                     <ul>
                         <li>
@@ -916,8 +916,8 @@
                                 <strong class="vi" style="color:var(--gold-light);">100 Thể Lực khởi điểm:</strong>
                                 <span class="vi">Mỗi lần chọn đáp án sai sẽ trừ 10 điểm thể lực (tương đương tối đa 10
                                     lần sai toàn game). Chọn đúng không trừ.</span>
-                                <strong class="zh" style="display:none; color:var(--gold-light);">100起始体力：</strong>
-                                <span class="zh" style="display:none;">每次答错扣除10点体力（相当于全游戏最多错10次）。答对不扣。</span>
+                                <strong class="zh" style="display:none; color:var(--gold-light);">初始體力100：</strong>
+                                <span class="zh" style="display:none;">每答錯一題扣除10點體力值（遊戲中最多可答錯10題）。答對一題不扣分。</span>
                             </div>
                         </li>
                         <li>
@@ -926,8 +926,9 @@
                                 <strong class="vi" style="color:var(--gold-light);">Khi còn Thể Lực (> 0):</strong>
                                 <span class="vi">Bạn được phép thoải mái thử lại và chọn các phương án khác trên câu hỏi
                                     đó cho đến khi tìm được đáp án đúng.</span>
-                                <strong class="zh" style="display:none; color:var(--gold-light);">体力尚存时（>0）：</strong>
-                                <span class="zh" style="display:none;">允许在该题上多次尝试选择其他选项，直到答对。</span>
+                                <strong class="zh" style="display:none; color:var(--gold-light);">當體力仍然存在（> 0）時：</strong>
+                                <span class="zh" style="display:none;">您可以多次嘗試，並選擇不同的選項來回答這個問題，
+                                直到找到正確答案為止。</span>
                             </div>
                         </li>
                         <li>
@@ -936,8 +937,8 @@
                                 <strong class="vi" style="color:var(--gold-light);">Khi hết Thể Lực (= 0):</strong>
                                 <span class="vi">Bạn vẫn có quyền làm hết các câu còn lại, nhưng KHÔNG ĐƯỢC CHỌN LẠI
                                     (bấm sai hoặc đúng thì câu hỏi đó sẽ bị khóa ngay lập tức).</span>
-                                <strong class="zh" style="display:none; color:var(--gold-light);">体力耗尽时（=0）：</strong>
-                                <span class="zh" style="display:none;">您仍可回答其余题目，但无法再次尝试（点击后该题立即锁定）。</span>
+                                <strong class="zh" style="display:none; color:var(--gold-light);">當體力耗盡（= 0）時：</strong>
+                                <span class="zh" style="display:none;">您仍然有權回答剩餘的問題，但您無法重新選擇（如果您點擊錯誤或正確，該問題將立即被鎖定）。</span>
                             </div>
                         </li>
                     </ul>
@@ -948,7 +949,7 @@
                 <div class="submit-quiz-container" id="submit-container" style="display:none;">
                     <button id="btnSubmit" class="submit-btn" onclick="submitResults()" disabled>
                         <span class="vi">Gửi Kết Quả</span>
-                        <span class="zh" style="font-family:'Noto Serif SC',serif;display:none;">发送结果</span>
+                        <span class="zh" style="font-family:'Noto Serif SC',serif;display:none;">提交結果</span>
                     </button>
                 </div>
 
@@ -962,7 +963,7 @@
                     <span class="outcome-emoji">🌸</span>
                     <h2 class="outcome-title">
                         <span class="vi">Cảm ơn bạn đã tìm hiểu Việt Nam!</span>
-                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">感谢您探索越南！</span>
+                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">感謝您了解越南！</span>
                     </h2>
 
                     <div class="score-display">
@@ -970,13 +971,13 @@
                             <span id="finalScore">0</span> <span style="font-size: 1.5rem; opacity: 0.8;">/
                                 100</span><br>
                             <span style="font-size: 1rem; color: #fff;" class="vi">Điểm Số</span>
-                            <span style="font-size: 1rem; color: #fff; display:none;" class="zh">得分</span>
+                            <span style="font-size: 1rem; color: #fff; display:none;" class="zh">分數</span>
                         </div>
                         <div>
                             <span id="finalStamina" style="color:#FF6B6B;">100</span> <span
                                 style="font-size: 1.5rem; color:#FF6B6B; opacity: 0.8;">HP</span><br>
                             <span style="font-size: 1rem; color: #fff;" class="vi">Thể Lực Còn Lại</span>
-                            <span style="font-size: 1rem; color: #fff; display:none;" class="zh">剩余体力</span>
+                            <span style="font-size: 1rem; color: #fff; display:none;" class="zh">剩餘體力</span>
                         </div>
                     </div>
 
@@ -984,7 +985,7 @@
                         <span class="vi">Hành trình trải nghiệm ngôn ngữ và văn hoá di sản của bạn đã được lưu lại trên
                             bảng dữ liệu trực tuyến.</span>
                         <span class="zh"
-                            style="display:none; font-family:'Noto Serif SC',serif;">您的语言和文化遗产体验旅程已记录在在线数据表中。</span>
+                            style="display:none; font-family:'Noto Serif SC',serif;">您體驗語言和文化遺產的旅程已記錄在線上資料庫中。</span>
                     </p>
 
                     <!-- Nút chơi lại vòng cung -->
@@ -994,7 +995,7 @@
                                 d="M12 2.75a9.25 9.25 0 1 0 4.737 17.197l-1.025-1.127A7.75 7.75 0 1 1 19.75 12h-1.5l2.625 3.375L23.5 12h-2.25a9.25 9.25 0 0 0-9.25-9.25z" />
                         </svg>
                         <span class="vi">Chơi Lại</span>
-                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">再玩一次</span>
+                        <span class="zh" style="display:none; font-family:'Noto Serif SC',serif;">重播</span>
                     </button>
                 </div>
             </div>
@@ -1002,7 +1003,7 @@
 
         <footer>
             <span class="vi">©Thiết kế Diệp Thúy An</span>
-            <span class="zh" style="font-family:'Noto Serif SC',serif;display:none;">©由 Diep Thuy An 设计</span>
+            <span class="zh" style="font-family:'Noto Serif SC',serif;display:none;">©由 Diep Thuy An 設計</span>
         </footer>
 
     </div>
@@ -1012,7 +1013,7 @@
         // URL CỦA GOOGLE APPS SCRIPT WEB APP 
         // BẠN PHẢI THAY THẾ LINK NÀY BẰNG LINK CỦA BẠN
         // ==========================================
-        const GAS_URL = 'https://script.google.com/macros/s/AKfycbxxyEvY-pTjhHcNhE4L3ohmXB_JBo90TCic6YaUOvTtMVlU503yinWzvw7L2li0j3RJ/exec';
+        const GAS_URL = 'https://script.google.com/macros/s/AKfycbzH5HD16msFDzojLw1fAma9HfN9O2pvXyN9pDNZcciwwq0YKFHDvmM6mAL6A8CVMtZI/exec';
 
         let playerName = "";
         let currentLang = 'vi';
